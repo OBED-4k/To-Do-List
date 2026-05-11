@@ -1,0 +1,96 @@
+.error { color: red; }
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background: blue;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+form{
+    display: flex;
+    gap: 40px;
+}
+
+input{
+    flex:1;
+    padding: 10px;
+    border: 1px solid #cccccccc;
+    border-radius: 5px;
+}
+
+button{ 
+    margin-left: 10px;
+   border: none;
+   background: rgba(1, 57, 36, 0.733);
+   color: white;
+   border-radius: 8px;
+   width: 80px;
+   cursor: pointer;
+}
+
+button:hover{
+    background: #0a3fa3;
+}
+
+#errorText{
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+li{
+    background: #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.done { 
+    text-decoration: line-through; 
+    color: green; 
+}
+
+.deleteBtn{
+    background: red;
+    padding: 2px 7px;
+    font-size: 15px;
+
+}
+
+.editBtn{
+    background: orange;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.btnContainer{
+    display: flex;
+    align-items: center;
+}
