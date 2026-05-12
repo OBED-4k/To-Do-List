@@ -9,7 +9,7 @@ form.addEventListener("submit", (e)=>{
     const taskValue = taskInput.value.trim();
 
     //VALIDATION
-    if(taskValue < 3){
+    if(taskValue.length <= 3){
         errorText.textContent = "Task must be at least 3 characters";
         return;
     }
@@ -69,7 +69,7 @@ form.addEventListener("submit", (e)=>{
     editBtn.addEventListener("click", (e)=>{
         e.stopPropagation();
 
-        const editedTask = prompt("Edit your task:");
+        const editedTask = prompt("Edit your task:", li.firstChild.textContent);
 
         //if clicked cancel
         if (editedTask === null) {
@@ -77,7 +77,7 @@ form.addEventListener("submit", (e)=>{
         }
 
         //validation
-        if (editedTask.trim().length < 3){
+        if (editedTask.trim().length <= 3){
             alert("Task ,ust be at least 3 characters");
             return;
         }
